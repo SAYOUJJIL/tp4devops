@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    registry = "kelguemmat/tp4"
-    registryCredential = 'dockerhub'
+    registry = "sayoujjil/tp4"
+    registryCredential = '9c6338b3-f35a-4f48-84f6-7c3834366fff'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/kelguemmat/tp4master21-22'
+        git 'https://github.com/SAYOUJJIL/tp4devops'
       }
     }
     stage('Building image') {
